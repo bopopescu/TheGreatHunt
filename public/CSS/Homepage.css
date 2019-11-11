@@ -1,0 +1,221 @@
+
+
+
+body{
+background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);}
+
+/*For profile info*/
+.container1{
+    position: relative;
+    margin: 0 auto;
+    background: rgba(200, 197, 197,.6);
+    height: 300px;
+    width: 1200px;
+    margin-bottom: 40px;
+}
+
+/*For challenge tables*/
+.container2{
+    position: relative;
+    margin: 0 auto;
+    background: rgba(200, 197, 197,.6);
+    height: 300px;
+    width: 1200px;
+    margin-bottom: 40px;
+    overflow-y:scroll;
+}
+
+/*THIS IS FOR PROFILE IMAGE*/
+.img_container{
+
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width:100px;
+height:100px;
+top: 15px;
+
+
+}
+
+.profile_pic{
+  display: block;
+
+  width: 100%;
+  height: 100%;;
+  border-radius:50%;
+  border: 5px outset #BAA897;
+
+
+}
+
+
+
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius:50%;
+  border: 5px outset #BAA897;
+  transition: .3s ease;
+  background: #98FB98;
+  }
+
+/* When you mouse over the container, fade in the overlay icon*/
+.img_container:hover .overlay {
+    opacity: 1;
+}
+
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+
+  color: white;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+
+label{
+position:absolute;
+width:100%;
+height:100%;
+
+}
+
+
+
+
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #d0d6e0;
+}
+
+
+
+/*THIS IS FOR PROFILE INFO */
+.profile_left{
+
+text-align:center;
+width:50%;
+float:left;
+
+/*background-color:red;*/
+}
+
+.profile_element{
+position:relative;
+margin-left:25%;
+margin-right:25%;
+
+
+border: 5px outset #BAA897;
+border-radius: 10%;
+
+
+}
+
+.profile_right{
+
+text-align:center;
+width:50%;
+float:right;
+
+
+}
+
+
+/*THIS IS FOR TABLE FORMATTING*/
+table.challenge_table {
+  border: 6px solid #948473;
+  background-color: #FFE3C6;
+  width: 100%;
+  text-align: center;
+}
+table.challenge_table td, table.challenge_table th {
+  border: 2px solid #948473;
+  padding: 4px 4px;
+}
+table.challenge_table tbody td {
+
+  font-size: 13px;
+}
+
+table.challenge_table tbody tr:hover{
+    border-style: dotted solid;
+    background-color: lightgrey;
+}
+table.challenge_table thead {
+  background: #948473;
+  background: -moz-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+  background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+  background: linear-gradient(to bottom, #afa396 0%, #9e9081 66%, #948473 100%);
+}
+table.challenge_table thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #F0F0F0;
+  text-align: left;
+  border-left: 2px solid #948473;
+}
+
+table.challenge_table thead th:first-child {
+  border-left: none;
+}
+
+
+
+/*THIS IS FOR DELETE BUTTON*/
+.btn {
+    background-color: grey; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 5% 10%; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius:50%;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #666b48;
+    border-radius: 10x;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #44443e;
+}

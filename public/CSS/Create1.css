@@ -1,0 +1,70 @@
+.top{
+margin: 0 auto;
+width:30%;
+position: relative;
+}
+
+.bottom{
+position: relative;
+margin-top:2%;
+margin-bottom:2%;
+}
+
+#title{
+margin-bottom:2%;
+}
+
+.task_container{
+position: relative;
+height:60%;
+width:80%;
+margin: 0 auto;
+margin-top:2%;
+}
+
+.task_input{
+position:relative;
+background:#4ECDC4;
+border-radius: 20px;
+padding: 20px;
+}
+
+.input{
+width:30%;
+margin-bottom:5%;
+}
+
+.labels{
+width:10%;
+bottom:2%;
+position:relative;
+float:left;
+margin-bottom:2%;
+}
+
+textarea{
+margin-left:13%;
+}
+
+.radio_button{
+margin-left:10%;
+margin-bottom:2%;
+}
+
+.radio_labels{
+width:10%;
+bottom:2%;
+position:relative;
+float:left;
+margin-bottom:2%;
+}
+
+.task_buttons{
+position:relative;
+margin-left:90%;
+}
+
+textarea{
+resize:none;
+}
+

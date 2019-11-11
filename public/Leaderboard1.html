@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaderboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--external css-->
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/style-responsive.css" rel="stylesheet">
+</head>
+
+<body>
+
+<section id="container">
+    <header class="header black-bg">
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+        </div>
+        <!--logo start-->
+        <a href="#" class="logo"><b>THE GREAT HUNT</b></a>
+        <!--logo end-->
+        <div class="top-menu">
+            <ul class="nav pull-right top-menu">
+                <li style="padding-top: 11px;"><button type="button" class="btn btn-theme" onclick="signOut();"> Logout</button></li>
+            </ul>
+        </div>
+    </header>
+
+<!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+<!--sidebar start-->
+<aside>
+    <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+            <p class="centered"><img id= "side_pic" src="default-profile.jpg" class="img-circle" width="200"></p>
+            <h5 class="centered"></h5>
+            <li class="mt">
+                <a href="Homepage.html">
+                    <i class="fa fa-dashboard"></i>
+                    <span>HomePage</span>
+                </a>
+            </li>
+            <li >
+                <a href="play-challenge.html">
+                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    <span>Play</span>
+                </a>
+            </li>
+            <li >
+                <a href="view-challenges.html">
+                    <i class="fa fa-tasks"></i>
+                    <span>Challenges</span>
+                </a>
+            </li>
+            <li >
+                <a class="active">
+                    <i class=" fa fa-bar-chart-o"></i>
+                    <span>Leaderboard</span>
+                </a>
+            </li>
+        </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+
+
+    <section id="main-content">
+        <section class="wrapper site-min-height">
+            <div class="row mt">
+                <div class="col-md-12">
+                    <div class="row content-panel">
+                        <h4><i class="fa fa-angle-right"></i> Leaderboards</h4>
+                        <hr>
+                        <table id="challenge_table1" class="challenge_table table">
+                            <thead>
+                            <tr class="table_top">
+                                <th>Rank</th>
+                                <th>User</th>
+                                <th>Score</th>
+                            </tr>
+                            </thead>
+
+                            <tbody id = "challengeUserList">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <!--&lt;!&ndash;footer start&ndash;&gt;-->
+    <!--<footer class="site-footer">-->
+        <!--<div class="text-center">-->
+            <!--<p>-->
+                <!--&copy; Copyrights <strong>Dashio</strong>. All Rights Reserved-->
+            <!--</p>-->
+            <!--<div class="credits">-->
+                <!--&lt;!&ndash;-->
+                  <!--You are NOT allowed to delete the credit link to TemplateMag with free version.-->
+                  <!--You can delete the credit link only if you bought the pro version.-->
+                  <!--Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/-->
+                  <!--Licensing information: https://templatemag.com/license/-->
+                <!--&ndash;&gt;-->
+                <!--Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>-->
+            <!--</div>-->
+            <!--<a href="index.html#" class="go-top">-->
+                <!--<i class="fa fa-angle-up"></i>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</footer>-->
+    <!--footer end-->
+</section>
+
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <script src="JS/app.js"></script>
+    <script type="text/javascript" src="JS/Controllers/auth-controller.js"></script>
+    <script type="text/javascript" src="JS/Controllers/user-controller.js"></script>
+    <script type="text/javascript" src="JS/WebPages/LeaderBoard.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="lib/jquery.scrollTo.min.js"></script>
+    <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+    <!--common script for all pages-->
+    <script src="lib/common-scripts.js"></script>
+
+
+</body>
+</html>

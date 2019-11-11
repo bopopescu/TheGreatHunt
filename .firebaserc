@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "thegreathunt-se",
+    "thegreathunt": "thegreathunt-se"
+  }
+}

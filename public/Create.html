@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>TheGreatHunt | Create</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="CSS/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap-fileupload/bootstrap-fileupload.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="CSS/style.css" rel="stylesheet">
+  <link href="CSS/style-responsive.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="CSS/Create1.css">
+
+
+
+
+</head>
+
+<body>
+<section id="container">
+  <header class="header black-bg">
+    <div class="sidebar-toggle-box">
+      <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+    </div>
+    <!--logo start-->
+    <a href="#" class="logo"><b>THE GREAT HUNT</b></a>
+    <!--logo end-->
+    <div class="top-menu">
+      <ul class="nav pull-right top-menu">
+        <!--<li><a class="logout" onClick = "signOut();">Logout</a></li>-->
+        <li style="padding-top: 11px;"><button type="button" class="btn btn-theme" onclick="signOut();"> Logout</button></li>
+      </ul>
+    </div>
+  </header>
+  <!--header end-->
+  <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+  <!--sidebar start-->
+  <aside>
+    <div id="sidebar" class="nav-collapse ">
+      <!-- sidebar menu start-->
+      <ul class="sidebar-menu" id="nav-accordion">
+        <p class="centered"><img id= "side_pic" src="default-profile.jpg" class="img-circle" width="200"></p>
+        <h5 class="centered"></h5>
+        <li class="mt">
+          <a href="Homepage.html">
+            <i class="fa fa-dashboard"></i>
+            <span>HomePage</span>
+          </a>
+        </li>
+        <li >
+          <a href="play-challenge.html">
+            <i class="fa fa-play-circle" aria-hidden="true"></i>
+            <span>Play</span>
+          </a>
+        </li>
+        <li >
+          <a href="view-challenges.html">
+            <i class="fa fa-tasks"></i>
+            <span>Challenges</span>
+          </a>
+        </li>
+        <li >
+          <a href="Leaderboard1.html">
+            <i class=" fa fa-bar-chart-o"></i>
+            <span>Leaderboard</span>
+          </a>
+        </li>
+      </ul>
+      <!-- sidebar menu end-->
+    </div>
+  </aside>
+  <!--sidebar end-->
+  <section id="main-content">
+    <section class="wrapper">
+      <div class="top">
+        <form id="challenge_info"><br/>
+          <div class="top_info">
+            Challenge Title:  <input id="title" type="text" name="title"><br/>
+            Description:<br/> <textarea id="description" name="description" cols="60" rows="15"></textarea><br/>
+          </div>
+        </div>
+
+        <div class="task_container">
+          <div id="taskSet1" class="task_input">
+            <div class="labels" > Task:</div>  <div class=input ><input id="task_1" type="text" name="task"><br/> </div>
+            <div class="radio_labels"> Type: <br/> </div>
+
+            <input class="radio_buttons" onclick='DisableImg("txt_answer_1", "img_answer_1")'  id="text_type1" type="radio" name="tsk_type1" value="text" > Text<br>
+            <input class="radio_buttons" onclick='DisableTxt("txt_answer_1", "img_answer_1")'  id="img_type1" type="radio" name="tsk_type1" value="image"> Image<br>
+
+
+
+            <div class="labels"  >Answer: </div>  <div class="input"> <input id="txt_answer_1" type="text" name="answer"><br/> </div>
+            <span class="labels" >Image Answer: </span> <div class="input"> <input id="img_answer_1" type="text" name="myFile"> <br/></div>
+            <div class="labels"  >Hint: </div> <div class="input"> <input id="hint_1" type="text" name="hint"><br/> </div>
+          </div>
+
+          <div id="taskButtons1" class="task_buttons">
+            <button type="button" class="negative_button" ><i class="fa  fa-minus"></i></button>
+            <button type="button" class="add_button" onclick="duplicate()"><i class="fa fa-plus"></i></button>
+          </div>
+
+          <div id="taskSet2" class="task_input">
+            <div class="labels" > Task:</div>  <div class=input ><input id="task_2" type="text" name="task"><br/> </div>
+            <div class="radio_labels"> Type: <br/> </div>
+
+            <input class="radio_buttons"  onclick='DisableImg("txt_answer_2", "img_answer_2")'  id="text_type2" type="radio" name="tsk_type2" value="text" > Text<br>
+            <input class="radio_buttons" onclick='DisableTxt("txt_answer_2", "img_answer_2")' id="img_type2" type="radio" name="tsk_type2" value="image"> Image<br>
+
+
+            <div class="labels"  >Answer: </div>  <div class="input"> <input id="txt_answer_2" type="text" name="answer"><br/> </div>
+            <span class="labels" >Image Answer: </span> <div class="input"> <input id="img_answer_2" type="text" name="myFile"> <br/></div>
+            <div class="labels"  >Hint: </div> <div class="input"> <input id="hint_2" type="text" name="hint"><br/> </div>
+          </div>
+
+          <div class="task_buttons">
+            <button type="button" class="negative_button" ><i class="fa  fa-minus"></i></button>
+            <button type="button" class="add_button" onclick="duplicate()"><i class="fa fa-plus"></i></button>
+          </div>
+
+          <div id="taskSet3" class="task_input">
+            <div class="labels" > Task:</div>  <div class=input ><input id="task_3" type="text" name="task"><br/> </div>
+            <div class="radio_labels"> Type: <br/> </div>
+
+            <input class="radio_buttons"  onclick='DisableImg("txt_answer_3", "img_answer_3")'  id="text_type3" type="radio" name="tsk_type3" value="text" > Text<br>
+            <input class="radio_buttons" onclick='DisableTxt("txt_answer_3", "img_answer_3")' id="img_type3" type="radio" name="tsk_type3" value="image"> Image<br>
+
+
+
+            <div class="labels"  >Answer: </div>  <div class="input"> <input id="txt_answer_3" type="text" name="answer"><br/> </div>
+            <span class="labels" >Image Answer: </span> <div class="input"> <input id="img_answer_3" type="text" name="myFile"> <br/></div>
+            <div class="labels"  >Hint: </div> <div class="input"> <input id="hint_3" type="text" name="hint"><br/> </div>
+          </div>
+
+          <div class="task_buttons">
+            <button type="button" class="negative_button" ><i class="fa  fa-minus"></i></button>
+            <button type="button" class="add_button" onclick="duplicate()"><i class="fa fa-plus"></i></button>
+          </div>
+        </div>
+
+        <div class="bottom">
+
+          <!--
+          THIS IS DROP DOWNS
+
+          <div class="labels_time">
+            <span>Time Limit: </span>
+            <select name="hours">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" >3</option>
+              <option value="4">4</option>
+            </select>
+
+            <span>Hours</span>
+
+            <select name="min">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" >3</option>
+              <option value="4">4</option>
+            </select>
+
+            <span>Minutes</span>
+          </div>
+          -->
+          Time Limit: hours <input id="hour" type="text" name="hours">
+          <input type="button" onclick="submitStuff()" name="submit" value="Submit">
+        </div>
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!--main content end-->
+
+    <!--footer start-->
+    <!--<footer class="site-footer">-->
+      <!--<div class="text-center">-->
+        <!--<p>-->
+          <!--&copy; Copyrights <strong>Dashio</strong>. All Rights Reserved-->
+        <!--</p>-->
+        <!--<div class="credits">-->
+          <!--&lt;!&ndash;-->
+          <!--You are NOT allowed to delete the credit link to TemplateMag with free version.-->
+          <!--You can delete the credit link only if you bought the pro version.-->
+          <!--Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/-->
+          <!--Licensing information: https://templatemag.com/license/-->
+          <!--&ndash;&gt;-->
+          <!--Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>-->
+        <!--</div>-->
+        <!--<a href="index.html#" class="go-top">-->
+          <!--<i class="fa fa-angle-up"></i>-->
+        <!--</a>-->
+      <!--</div>-->
+    <!--</footer>-->
+    <!--footer end-->
+  </section>
+
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+  <script type="text/javascript" src="JS/app.js"></script>
+  <script type="text/javascript" src="JS/Controllers/auth-controller.js"></script>
+  <script type="text/javascript" src="JS/Controllers/user-controller.js"></script>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+  <script type="text/javascript" src="JS/app.js"></script>
+  <script type="text/javascript" src="JS/Controllers/auth-controller.js"></script>
+  <script type="text/javascript" src="JS/Controllers/user-controller.js"></script>
+  <script src="JS/WebPages/Create.js"></script>
+  <script>
+        jQuery.browser = {};
+        (function () {
+            jQuery.browser.msie = false;
+            jQuery.browser.version = 0;
+            if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+                jQuery.browser.msie = true;
+                jQuery.browser.version = RegExp.$1;
+            }
+        })();
+    </script>
+  <script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="lib/jquery.sparkline.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJF0duAdenqUmVwKYVKJoo_JEQZkmm_m0"></script>
+
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+
+</body>
+
+</html>

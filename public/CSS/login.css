@@ -1,0 +1,330 @@
+body {
+    font-family: "open sans", "segoe ui";
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+a {
+	transition: background .3s;
+}
+/* BACKGROUND */
+.background, .backdrop {
+	background-color: #3f689c;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	background-size: cover;
+	z-index: -1;
+}
+
+.backdrop {
+	background: #333333;
+	filter: alpha(opacity=40);
+	opacity: .4;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	z-index: -1;
+}
+.background {
+	background-image: url('../bg.jpg');
+	z-index: -1;
+}
+
+/* CONTAINER */
+.main-container-signup{
+	width: 400px;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	margin-left: -450px;
+	margin-top: -200px;
+}
+.main-container-signup a{
+	text-decoration:none;
+}
+
+.main-container-login{
+	width: 400px;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: 40px;
+	margin-top: -200px;
+}
+.main-container-login a{
+	text-decoration:none;
+}
+
+/* CONTENT */
+.content {
+	background-color: #FFFFFF;
+	height: 350px;
+	padding: 25px 25px;
+}
+.content i{
+    width: 30px;
+    text-align: center;
+	vertical-align: bottom;
+}
+
+/* HEADER */
+.header {
+	text-align: center;
+}
+.header h2 {
+	margin-top: 150px;
+	margin-left: 550px;
+	width: 300px;
+	font-size: 60px;
+	color: white;
+}
+.header h3 {
+	font-weight: lighter;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+/* SIGNUP FORM */
+.signup-form {
+	margin-top: 50px;
+}
+.signup-form .input-container {
+	border-bottom: 1px solid #CCCCCC;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #9e9e9e;
+	padding-bottom: 5px;
+}
+.signup-form .input {
+	border: 0;
+	width: 200px;
+}
+.signup-form .input:focus {
+    outline: none;
+}
+#show-password {
+	float: right;
+    vertical-align: bottom;
+    text-align: center;
+    margin-top: 7px;
+	cursor: pointer;
+}
+.signup-form .forgot-password {
+	float: right;
+}
+.signup-form .rememberme-container {
+	margin-top: 15px;
+	padding: 0;
+}
+.signup-form .rememberme-container input {
+	margin-left: 0;
+}
+.signup-form .rememberme span {
+	vertical-align: top;
+}
+.signup-form .button {
+	margin-top: 15px;
+    width: 100%;
+    background: #4ECDC4;
+    border: 1;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 15px;
+	cursor: pointer;
+	transition: background .3s;
+}
+.signup-form .button:hover {
+	background: white;
+	color: grey;
+	border-color:grey;
+}
+.signup-form .button:focus {
+	outline: none;
+}
+.signup-form .register {
+	margin-top: 5px;
+    background: #dadada;
+    border: 0;
+    color: #676464;
+    padding: 9px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+}
+.signup-form .register:hover	{
+	background: #d0d0d0;
+}
+
+/* INPUT FORM */
+.login-form .input-container {
+	border-bottom: 1px solid #CCCCCC;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #9e9e9e;
+	padding-bottom: 5px;
+}
+.login-form .input {
+	border: 0;
+	width: 200px;
+}
+.login-form .input:focus {
+    outline: none;
+}
+#show-password {
+	float: right;
+    vertical-align: bottom;
+    text-align: center;
+    margin-top: 7px;
+	cursor: pointer;
+}
+
+#hide-password {
+	float: right;
+    vertical-align: bottom;
+    text-align: center;
+    margin-top: 7px;
+	cursor: pointer;
+}
+
+.login-form .forgot-password {
+	float: right;
+}
+.login-form .rememberme-container {
+	margin-top: 15px;
+	padding: 0;
+}
+.login-form .rememberme-container input {
+	margin-left: 0;
+}
+.login-form .rememberme span {
+	vertical-align: top;
+}
+.login-form .button {
+	margin-top: 15px;
+    width: 100%;
+    background: #4ECDC4;
+    border: 1;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 15px;
+	cursor: pointer;
+	transition: background .3s;
+}
+.login-form .button:hover {
+	background: white;
+	color: grey;
+	border-color:grey;
+}
+.login-form .button:focus {
+	outline: none;
+}
+.login-form .register {
+	margin-top: 5px;
+    background: #dadada;
+    border: 0;
+    color: #676464;
+    padding: 9px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+}
+.login-form .register:hover	{
+	background: #d0d0d0;
+}
+
+/* ACTIVATION LINK */
+.resend-activation {
+	text-align: center;
+	margin-top: 15px;
+	margin-top: 10px;
+    color: #425384;
+	line-height: 22px;
+}
+.attibution {
+	text-align: center;
+    margin-top: 7px;
+    color: #a5a5a5;
+	line-height: 25px;
+}
+
+/* SEPARATOR */
+.content .separator {
+	margin: 20px 0;
+	border-top: 1px solid #CCCCCC;
+	position: relative;
+}
+.content .separator-text {
+	display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -22px;
+    padding: 0px 10px;
+    background: #FFFFFF;
+	color: #8a8a8a;
+}
+
+/* SOCIAL MEDIA LOGIN */
+.socmed-login .socmed-btn {
+    padding: 10px 25px;
+    color: #FFFFFF;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+}
+.socmed-login .socmed-btn i {
+	text-align: left;
+    border-right: 1px solid #FFFFFF;
+    margin-right: 15px;
+    width: 25px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+.socmed-login .socmed-btn span {
+	display: inline-block;
+    margin-top: 8px;
+    line-height: 0;
+}
+.socmed-login .facebook-btn {
+	background: #3b5998;
+}
+.socmed-login .facebook-btn:hover {
+	background: #324b80;
+}
+.socmed-login .google-btn {
+	background: #ef0a0a;
+}
+.socmed-login .google-btn:hover {
+	background: #d40909;
+}
+.socmed-login .yahoo-btn {
+	background: #940b94;
+}
+
+/* RESPONSIVE */
+@media screen and (max-height: 600px) {
+	.login-form-container {
+		margin-top: 0 !important;
+		top: 10px !important;
+	}
+}
+@media screen and (max-width: 400px) {
+	.login-form-container {
+		left: 5px;
+		margin-left: 5px;
+		min-width: 283px;
+		right: 10px;
+		margin-bottom: 10px;
+		width: auto;
+	}
+	.login-form .input {
+		width: 140px;
+	}
+	.socmed-login .socmed-btn i {
+		margin-right: 5px;
+		width: 19px;
+	}
+}

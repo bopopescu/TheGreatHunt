@@ -1,0 +1,193 @@
+{
+  "TheGreatHunt" : {
+    "challenges" : {
+      "001" : {
+        "creatorID" : "testing1234",
+        "num_tasks" : 7,
+        "sum_ratings": 20,
+        "total_ratings" : 4,
+        "time" : 60,
+        "title" : "Food Spots",
+        "ch_type" : "text"
+      },
+      "002" : {
+        "creatorID" : "jai5",
+        "num_tasks" : 4,
+        "sum_ratings": 15,
+        "total_ratings" : 5,
+        "time" : 50,
+        "title" : "the chill spots",
+        "ch_type" : "image"
+      },
+      "003" : {
+        "creatorID" : "cic1",
+        "num_tasks" : 3,
+        "sum_ratings": 24,
+        "total_ratings" : 6,
+        "time" : 24,
+        "title" : "The gaming spots",
+        "ch_type" : "mixed"
+        
+      }
+    },
+    "tasks" : {
+      "010" : {
+        "challenge_id" : "001",
+        "description" : "Where is the googleplex?",
+        "hint" : "MTV",
+        "image_answer" : "blank",
+        "string_answer" : "Mountain View",
+        "image_type" : false
+      },
+      "020" : {
+        "challenge_id" : "001",
+        "description" : "The most popular dinosaur of all time",
+        "hint" : "Googleplex",
+        "image_answer" : "gs://thegreathunt-se.appspot.com/challenges/001/020/places-visit-summer-03.jpg",
+        "string_answer" : "blank",
+        "image_type" : true
+      },
+      "030" : {
+        "challenge_id" : "001",
+        "description" : "The garden full of robots",
+        "hint" : "Souvenir shop",
+        "image_answer" : "gs://thegreathunt-se.appspot.com/challenges/001/030/http_%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F180508141328-09-amazing-places-africa---sphinx.jpg",
+        "string_answer" : "blank",
+        "image_type" : true
+      },
+      "040" : {
+        "challenge_id" : "002",
+        "description" : "The garden full of stuff",
+        "hint" : "Stuffy stuff",
+        "image_answer" : "blank",
+        "string_answer" : "The Stuffs",
+        "image_type" : false
+      },
+      "050" : {
+        "challenge_id" : "002",
+        "description" : "where is blaze?",
+        "hint" : "MTV",
+        "image_answer" : "blank",
+        "string_answer" : "MTV-1225",
+        "image_type" : false
+      },
+      "060" : {
+        "challenge_id" : "002",
+        "description" : "where is heritage?",
+        "hint" : "MTV",
+        "image_answer" : "blank",
+        "string_answer" : "MTV-1950",
+        "image_type" : false
+      },
+      "070" : {
+        "challenge_id" : "003",
+        "description" : "Where is the great outdoors?",
+        "hint" : "SVL",
+        "image_answer" : "blank",
+        "string_answer" : "SVL-MAT3",
+        "image_type" : false
+      },
+      "080" : {
+        "challenge_id" : "003",
+        "description" : "where is BORDER TO BORDER?",
+        "hint" : "MTV",
+        "image_answer" : "blank",
+        "string_answer" : "MTV-1365",
+        "image_type" : false
+      },
+      "090" : {
+        "challenge_id" : "003",
+        "description" : "where is martketplace?",
+        "hint" : "SVL",
+        "image_answer" : "blank",
+        "string_answer" : "SVL-MP1",
+        "image_type" : false
+      }
+
+    },
+    "users" : {
+      "001" : {
+        "username" : "cic1",
+        "e-mail": "cic1@gmail.com",
+        "tried_challenges" : {
+          
+              "001": {
+                "task_id": {
+                  "010": {
+                    "completed" : true,
+                    "used_hint" : true,
+                    "points": 2
+                  },
+                  "020" : {
+                    "completed" : false,
+                    "used_hint" : false,
+                    "points" : 0
+                  },
+                  "030" : {
+                    "completed" : true,
+                    "used_hint" : true,
+                    "points" : 1
+                  }
+                },
+                "task_completed" : 2
+              }
+          
+        }
+      },
+      "002" : {
+        "username" : "testing1234",
+        "e-mail": "testing1234@yahoo.com",
+        "tried_challenges" : {
+              "002": {
+                "task_id": {
+                  "040": {
+                    "completed" : true,
+                    "used_hint" : true,
+                    "points": 2
+                  },
+                  "050" : {
+                    "completed" : false,
+                    "used_hint" : false,
+                    "points" : 0
+                  },
+                  "060" : {
+                    "completed" : false,
+                    "used_hint" : false,
+                    "points" : 0
+                  }
+
+                },
+                "task_completed" : 1
+              }
+          
+        }
+      },
+      "003" : {
+        "username" : "jai5",
+        "e-mail": "jai@gmail.com",
+        "tried_challenges" : {
+              "003": {
+                "task_id": {
+                  "070": {
+                    "completed" : false,
+                    "used_hint" : false,
+                    "points": 0
+                  },
+                  "080" : {
+                    "completed" : false,
+                    "used_hint" : false,
+                    "points" : 0
+                  },
+                  "090" : {
+                    "completed" : false,
+                    "used_hint" : false,
+                    "points" : 0
+                  }
+                },
+                "task_completed" : 0
+              }
+        }
+      }
+    }
+  }
+}
